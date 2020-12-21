@@ -61,6 +61,13 @@ function calc(){
     
 
    /* *************************
+   var rb = document.getElementsByName('RadioOptionsAge');
+   
+   switch(rb.value){
+        case '1': category = maleFemale(bmi); break;
+   
+   }
+   
    if(document.getElementById('age20-29').checked){
        category = maleFemale(bmi);
        
