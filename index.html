@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+    <!-- FA5 CSS -->
+	<link rel="stylesheet" href="./assets/fa/css/all.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<script src="./assets/js/jscript.js"></script>
+
+	<title>Калькулятор индекса массы тела</title>
+	
+  </head>
+  <body>
+   
+	<div class="container mt-5 ">
+		
+		<h1 class="text-center">Калькулятор индекса массы тела</h1>
+	
+		<!-- Input Data Form -->
+		<div class='row row-cols-1 my-4 w-50 mx-auto'>
+			<div class="form-group text-center">
+			  <label for="heightInput">Введите свой рост(м.)</label>
+			  <input type="number" class="form-control" id="heightInput" 	min="1" max="3" step="0.1" value="1">
+			</div>
+
+			<div class="form-group text-center my-3 ">
+			  <label for="weightheInput">Введите свой вес(кг.)</label>
+			  <input type="number" class="form-control" id="weightInput" min="25" max="300"  value="79">
+			</div> 
+
+			
+			<div class="btn-group text-center">
+					<div class="form-check form-check-inline">
+						<input
+						class="form-check-input"
+						type="radio"
+						name="RadioOptionsSex"
+						id="male"
+						value="male"
+						checked
+						/>
+						<label class="form-check-label" for="male">мужчина</label>
+					</div>
+					
+					<div class="form-check form-check-inline">
+						<input
+						class="form-check-input"
+						type="radio"
+						name="RadioOptionsSex"
+						id="female"
+						value="female"
+						/>
+						<label class="form-check-label" for="female">женщина</label>
+					</div>			  
+			</div>
+			
+			<h5 class="text-center">выберите свой возраст</h5>
+			<div class="btn-group">
+						
+						<div class="form-check form-check-inline">
+							<input
+							class="form-check-input"
+							type="radio"
+							name="RadioOptionsAge"
+							id="age20-29"
+							value="1"
+							checked
+							/>
+							<label class="form-check-label" for="age20-29">20-29</label>
+						</div>
+						
+						<div class="form-check form-check-inline">
+							<input
+							class="form-check-input"
+							type="radio"
+							name="RadioOptionsAge"
+							id="age30-39"
+							value="2"
+							/>
+							<label class="form-check-label" for="age30-39">30-39</label>
+						</div>		
+
+						<div class="form-check form-check-inline">
+							<input
+							class="form-check-input"
+							type="radio"
+							name="RadioOptionsAge"
+							id="age40-49"
+							value="3"
+							/>
+							<label class="form-check-label" for="age40-49">40-49</label>
+						</div>	
+
+						<div class="form-check form-check-inline">
+							<input
+							class="form-check-input"
+							type="radio"
+							name="RadioOptionsAge"
+							id="age50-59"
+							value="4"
+							/>
+							<label class="form-check-label" for="age50-59">50-59</label>
+						</div>
+
+						<div class="form-check form-check-inline">
+							<input
+							class="form-check-input"
+							type="radio"
+							name="RadioOptionsAge"
+							id="age60-69"
+							value="5"
+							/>
+							<label class="form-check-label" for="age60-69">60-69</label>
+						</div>		
+
+						<div class="form-check form-check-inline">
+							<input
+							class="form-check-input"
+							type="radio"
+							name="RadioOptionsAge"
+							id="age70-79"
+							value="6"
+							/>
+							<label class="form-check-label" for="age70-79">70-79</label>
+						</div>	
+								
+						<div class="form-check form-check-inline">
+							<input
+							class="form-check-input"
+							type="radio"
+							name="RadioOptionsAge"
+							id="age80"
+							value="7"
+							/>
+							<label class="form-check-label" for="age80">80+ </label>
+						</div>		
+			</div>
+
+		</div>
+		
+		<div class="text-center mt-3">
+			<button onclick = 'calc()' class="btn btn-primary w-50  ">Рассчитать</button>		  
+		
+			<!-- /Input Data Form -->
+					
+			<h3 class='my-4'>Индекс массы тела равен:  </h3>
+			<h2><output id="resultBmi"> </output></h2>
+			<h2><output id="bmiCategory"> </output></h2>
+		</div> 
+	</div>
+   
+  </body>
+</html>
